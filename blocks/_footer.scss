@@ -1,0 +1,51 @@
+.footer{
+    width: 1400px;
+    padding: 100px;
+    margin: auto;
+
+    &__top{
+        display: flex;
+        align-items: start;
+        gap: 50px;
+    }
+
+    &__columns{
+        display: flex;
+        gap: 100px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17.7249px;
+        line-height: 125.68%;
+        letter-spacing: -0.02em;
+
+        color: #515151;
+    }
+
+    &__text1{
+        color: white;
+    }
+
+    &__column{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    background-color: black;
+
+    &__bottom{
+        width: 1300px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+        align-items: center;
+    }
+
+    &__link{
+        color: orange;
+        font-size: 20px;
+    }
+}
+
+.website1{
+    width: 30px;
+}

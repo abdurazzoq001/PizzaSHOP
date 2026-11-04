@@ -1,0 +1,27 @@
+@import './blocks/block';
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    text-decoration: none;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+
+    font-family: 'Mulish';
+    font-style: normal;
+}
+
+body{
+    background: #210A01;
+}
+
