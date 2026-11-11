@@ -1,67 +1,98 @@
-.navbar{
+.navbar {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+
+  &__list {
     display: flex;
-    width: 1200px;
-    margin: auto;
+    gap: 50px;
+    color: #a3a3a3;
+  }
+
+  &__item {
+    color: #a3a3a3;
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  &__btn1 {
+    background: linear-gradient(261.69deg, #ff5d29 12.12%, #fe9c1c 86.72%);
+    border-radius: 700px 675px 700px 700px;
+
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 109.5%;
+
+    color: #ffffff;
+
+    width: 130px;
+    height: 30px;
+    border: 0;
+  }
+
+  &__btn2 {
+    background: linear-gradient(261.69deg, #ff6432 12.12%, #ffa228 86.72%);
+    border-radius: 700px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    color: white;
+  }
+
+  &__btnes {
+    display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 25px;
+    gap: 20px;
+  }
 
-    &__list{
-        display: flex;
-        gap: 50px;
-        color: #A3A3A3;
+  &__icon {
+    width: 20px;
+  }
+
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    &-item {
+      width: 20px;
+      border: 1px solid orange;
     }
-
-    &__item{
-        color: #A3A3A3;
-        font-weight: 700;
-        font-size: 12px;
-    }
-
-    &__btn1{
-        background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
-        border-radius: 700px 675px 700px 700px;
-
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 109.5%;
-
-        color: #FFFFFF;
-
-
-        width: 130px;
-        height: 30px;
-        border: 0;
-    }
-
-    &__btn2{
-        background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
-        border-radius: 700px;
-        width: 30px;
-        height: 30px;
-        border: 0;
-        color: white;
-    }
-
-    &__btnes{
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-
-    &__icon{
-        width: 20px;
-    }
+    display: none;
+  }
 }
 
-.span1{
-    color: #FFA228;
-} 
+.span1 {
+  color: #ffa228;
+}
 
-.section1{
-    width: 1400px;
-    border: 4px dashed #A3A3A3;
-    margin: auto;
+.section1 {
+  width: 1400px;
+  border: 4px dashed #a3a3a3;
+  margin: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    width: 95%;
+    &__btn1 {
+      display: none;
+    }
+    &__list {
+      display: none;
+    }
+
+    &__burger {
+      display: flex;
+    }
+  }
+
+  .section1 {
+    border: none;
+    width: 100%;
+  }
 }
